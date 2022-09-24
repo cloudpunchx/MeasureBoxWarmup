@@ -1,0 +1,14 @@
+html{
+    background-color: rgb(205, 226, 200);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.updatepost img{
+    height: 300px;
+    border-radius: 10px;
+}
+
+article{
+    display: inline-block;
+}
+
