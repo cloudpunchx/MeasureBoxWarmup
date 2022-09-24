@@ -1,0 +1,73 @@
+html{
+    background-color: bisque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16pt;
+}
+
+/* See how using grid-auto-flow: column changes the boxes
+it actually defaults to ROW but I wanted to still put it here for ex. */
+/* fr (fraction) is a relative measurement for grids only */
+/* browser reads & places static measurements first then remaining space split between fr's */
+#gridContainer{
+    display: grid;
+    grid-auto-flow: row;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 15vh;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+#gridContainer > div{
+    height: 15vh;
+}
+
+/* any specified rule in the child will override parent rule see align/justify self tags */
+#one{
+    background-color: rgb(197, 164, 252);
+    height: 5vh;
+    align-self: start;
+    justify-self: start;
+}
+
+#two{
+    background-color: rgb(247, 193, 218);
+    height: 5vh;
+}
+
+#three{
+    background-color: rgb(85, 168, 150);
+    height: 5vh;
+}
+
+#four{
+    background-color: rgb(231, 240, 105);
+    height: 5vh;
+}
+
+#five{
+    background-color: orange;
+    height: 5vh;
+}
+
+#six{
+    background-color: rgb(43, 226, 226);
+    height: 5vh;
+}
+
+#seven{
+    background-color: rgb(115, 184, 141);
+    height: 5vh;
+}
+
+#eight{
+    background-color: linen;
+    height: 5vh;
+}
+
+#nine{
+    background-color: rgb(224, 178, 24);
+    height: 5vh;
+}

@@ -9,15 +9,26 @@ html{
 }
 
 /* Use relative unit of measure for text so it doesnt break*/
+/* when you want to use a grid you HAVE TO FIRST choose display:grid */
 header{
     font-size: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 10fr 3fr;
+    justify-items: center;
 }
 
-/* We d */
+header > h1{
+}
+
+header > nav{
+    justify-self: end;
+}
+
 #logo{
     width: 75px;
-    margin-left: 25px;
-    margin-top: 25px;
+    align-self: center;
 }
 
 .post{
