@@ -1,14 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html{
     background-color: rgb(205, 226, 200);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.updatepost img{
-    height: 300px;
-    border-radius: 10px;
+/* Use relative unit of measure for text so it doesnt break*/
+header{
+    font-size: 2rem;
 }
 
-article{
+/* We d */
+#logo{
+    width: 75px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.post{
+    width: 25vw;
+    border: solid black 2px;
     display: inline-block;
+    transform: translateX(10%);
+}
+
+.post img{
+    width: 270px;
+    padding: 1px;
+}
+
+/* percent is used for sizing relative to parent, (em is for text only) */
+/* transform - not in notes */
+/* set translate to align with whatever % you put in the tag like
+split a box by 50% and you want the content to align with the % you 
+added of the parent, like align it halfway in the box, make sense? */
+.post > p{
+    width: 50%;
+    transform: translateX(50%);
 }
 
